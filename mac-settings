@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+if [[ $OSTYPE == darwin* ]]; then
+  # 15 - the lowest setting on UI
+  # 8 - too fast causing duplicate keystrokes
+  # 10 - sweet spot for blazing fast keystrokes
+  defaults write -g InitialKeyRepeat -int 10 # 10 is 150 ms
+
+  # 2 the lowest setting on UI
+  defaults write -g KeyRepeat -int 1 # 1 is 15 ms
+
+  # allow holding key instead of mac default holding key to choose alternate key
+  defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+fi
+
