@@ -19,9 +19,3 @@ shift + alt - r : yabai -m space --rotate 90
 # Make window native fullscreen
 alt - f         : yabai -m window --toggle zoom-fullscreen
 shift + alt - f : yabai -m window --toggle native-fullscreen
-
-# create a space
-cmd + alt - n : yabai -m space --create
-
-# destroy current space
-cmd + alt - d : yabai -m space --destroy
