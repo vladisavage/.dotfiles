@@ -1,4 +1,3 @@
 [submodule "init.lua"]
 	path = nvim
     url = https://github.com/0xVladi/init.lua
-    branch = main
