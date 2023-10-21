@@ -5,4 +5,3 @@ Make sure everythings symlinked into .config
 
 ## Todo List
 - [ ] Zsh config
-- [ ] Tmux config
