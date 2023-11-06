@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# Check if Homebrew is installed
+if ! command -v brew &>/dev/null; then
+    echo "Homebrew is not installed. Please install Homebrew first."
+    exit 1
+fi
+
+# Install fzf using Homebrew
+if ! command -v fzf &>/dev/null; then
+    echo "Installing fzf..."
+    brew install fzf
+else
+    echo "fzf is already installed."
+fi
+
+# Run the install script provided by fzf
+echo "Setting up fzf key bindings and auto-completion..."
+"$(brew --prefix)/opt/fzf/install" --all --no-update-rc
+
+echo "fzf installation and setup complete."
