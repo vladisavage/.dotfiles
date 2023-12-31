@@ -10,12 +10,16 @@ cmd - right : yabai -m window --focus east
 cmd + shift - left : yabai -m window --warp west
 cmd + shift - down : yabai -m window --warp south
 cmd + shift - up : yabai -m window --warp north
-cmd + shift - right : yabai -m window --warp east
+#cmd + shift - right : yabai -m window --warp east
 
 # Rotate windows clockwise and anticlockwise
 alt - r         : yabai -m space --rotate 270
 shift + alt - r : yabai -m space --rotate 90
 
 # Make window native fullscreen
-alt - f         : yabai -m window --toggle zoom-fullscreen
-shift + alt - f : yabai -m window --toggle native-fullscreen
+ctrl - f : yabai -m window --toggle zoom-fullscreen
+
+# Switch focus to specific apps
+cmd + shift - 1 : osascript -e 'tell application "iTerm2" to activate'
+cmd + shift - 2 : osascript -e 'tell application "Google Chrome" to activate'
+
