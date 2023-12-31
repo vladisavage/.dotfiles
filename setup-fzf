@@ -1,6 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/zsh
 
-# Install fzf using Homebrew
 if ! command -v fzf &>/dev/null; then
     echo "Installing fzf..."
     brew install fzf
