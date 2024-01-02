@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env bash
 
 if ! command -v fzf &>/dev/null; then
     echo "Installing fzf..."
