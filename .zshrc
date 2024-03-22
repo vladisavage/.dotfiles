@@ -116,6 +116,12 @@ alias pip=pip3
 alias dev="cd ~/dev"
 alias cls="clear"
 
-alias gll="git log | nvim -R -"
+gll() {
+    if [ $# -eq 0 ]; then
+        git log | nvim -R -
+    else
+        git log --author="$1" | nvim -R -
+    fi
+}
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
