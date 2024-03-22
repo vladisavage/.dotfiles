@@ -1,0 +1,6 @@
+[font]
+size = 14.0
+
+[window]
+padding = { x = 5, y = 5 }
+decorations = "full"
