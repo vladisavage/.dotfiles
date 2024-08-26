@@ -1,6 +1,6 @@
-## Fonts (for terminal)
+## Fonts
 
-[FiraCode](https://github.com/tonsky/FiraCode)
+[SF Mono](https://developer.apple.com/fonts/)
 
 ## Git Pager
 
