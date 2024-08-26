@@ -32,3 +32,9 @@ blue = "0x61afef"
 magenta = "0xc678dd"
 cyan = "0x56b6c2"
 white = "0xffffff"
+
+[cursor]
+blink_interval = 750
+
+[cursor.style]
+blinking = "Always"
