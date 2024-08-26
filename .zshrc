@@ -125,3 +125,7 @@ gll() {
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH=$JAVA_HOME/bin:$PATH
+export JAVA_HOME=/usr/local/opt/openjdk
+export PATH=$JAVA_HOME/bin:$PATH
